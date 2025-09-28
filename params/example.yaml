@@ -1,0 +1,18 @@
+example_node:
+  ros__parameters:
+    bounded_int:
+      value: 42
+      upper_bound: 100
+      lower_bound: 0
+      default: 10
+
+    bounded_double:
+      value: 15.0
+      upper_bound: 30.0
+      lower_bound: 10.0
+      default: 20.0
+
+    bounded_string:
+      value: "base_link"
+      allowed_values: ["map", "odom", "base_link"]
+      default: "map"
